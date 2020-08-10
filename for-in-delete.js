@@ -41,6 +41,8 @@
 
 function showValues( obj ) {
   //Code Here
+  for(let key in showValues){
+    console.log(`${key}`);
 }
 
 

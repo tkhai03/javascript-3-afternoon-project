@@ -23,6 +23,7 @@ var carDetails = {
 
 //Code Here
 
+const {color, make, model, year} = carDetails
 
 
 ////////// PROBLEM 2 //////////
@@ -35,7 +36,12 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const{firstName, lastName, title} = greeting
+
+console.log(firstName)
+
+
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -55,7 +61,9 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function totalPopulation (obj) {
+  const (utah, california, texas, arizona) = obj
+}
 
 ////////// PROBLEM 4 //////////
 
