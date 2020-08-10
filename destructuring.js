@@ -61,9 +61,9 @@ console.log(firstName)
 
 //Code Here
 
-function totalPopulation (obj) {
-  const (utah, california, texas, arizona) = obj
-}
+//function totalPopulation (obj) {
+//  const (utah, california, texas, arizona) = obj
+//}
 
 ////////// PROBLEM 4 //////////
 

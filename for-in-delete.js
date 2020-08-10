@@ -39,12 +39,13 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
-  for(let key in showValues){
-    console.log(`${key}`);
-}
-
+//function showValues( obj ) {
+//  //Code Here
+//  for(let key in showValues){
+//    console.log(key)
+//    if(key)
+//}
+//}
 
 
 ////////// PROBLEM 2 //////////
@@ -58,6 +59,11 @@ function showValues( obj ) {
 //Code Here
 
 
+const greaterThan10 = obj => {
+  for(let key in obj){
+    if(key > 10)
+  }
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -83,7 +89,15 @@ function showValues( obj ) {
 
 //Code Here
 
-
+const secrets = obj => {
+  let newStr = ''
+  for(let prop in obj){
+    if(prop.startsWith('sh')){
+      newStr += obj[prop]
+    }
+  }
+  return newStr
+}
 
 /* 
   Sometimes it's needed to delete object properties. 
@@ -113,7 +127,12 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+const removePassword = obj => {
+  for(let key in obj){
+    if 
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 6 //////////

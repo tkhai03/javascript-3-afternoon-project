@@ -51,10 +51,22 @@ var employees = [
 */
 
 //Code Here
+//Filter for 1., ForEach for 2.
 
-function employeeUpdate () {
-  
+
+const employeeUpdater = () => {
+  let filteredEmployees = employees.filter(e => e.filterName !== "Theo")
+  let mappedEmployees = filteredEmployees.map(e => {
+    if(e.firstName === "Lorie"){
+      e.department = "HR"
+    }
+    return e
+  })
+  return mappedEmployees
 }
+
+
+
 
 ////////// PROBLEM 2 //////////
 
@@ -71,6 +83,31 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+//const removeDuplicates = () => {
+//  for(let i = 0; i < workplaceAccidents.length; i++){
+//    for(let j = i + 1; j < workplaceAccidents.length, j++){
+//      if(workplaceAccidents[i] === workplaceAccidents[j]){
+//        workplaceAccidents.splice(j, 1)
+//      }
+//    }
+//  }
+//  return workplaceAccidents
+//}
+
+//console.log(workplaceAccidents[i], workplaceAccidents[j])
+
+
+
+
+workplaceAccidents.forEach((element, index, arr) => {
+  arr.forEach((num, subIndex) => {
+    if(element === num && subIndex !== index){
+//      console.log('element', element, index, 'num', num, subIndex)
+      }
+    })
+  })
+
+//only console logging if it is the same
 
 
 
