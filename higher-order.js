@@ -46,10 +46,10 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 //Code Here
-//let postTaxPrices = prices.map(function(element, index, wholeArray){
-//  return element * 1 + (taxRate / 100);
-//})
-//return postTaxPrices
+let postTaxPrices = prices.map(function(element, index, wholeArray){
+  return element * 1 + (1 + (taxRate / 100));
+})
+return postTaxPrices
 
 
 

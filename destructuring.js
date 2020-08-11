@@ -36,7 +36,7 @@ const {color, make, model, year} = carDetails
 
 function greeting( obj ) {
   //Code Here
-  const{firstName, lastName, title} = greeting
+  const {firstName, lastName, title} = obj
 
 console.log(firstName)
 
@@ -61,9 +61,11 @@ console.log(firstName)
 
 //Code Here
 
-//function totalPopulation (obj) {
-//  const (utah, california, texas, arizona) = obj
-//}
+function totalPopulation ( obj ) {
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+}
+
 
 ////////// PROBLEM 4 //////////
 
@@ -76,7 +78,10 @@ console.log(firstName)
 */
 
 //Code Here
-
+function ingredients (obj) {
+  let {carb, fat, protein} = obj
+  return [carb, fat, protein]
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -95,6 +100,9 @@ console.log(firstName)
 
 //Code Here
 
+function largeNumbers( {first, second, third} ) {
+  return Math.min(first, second, third)
+};
 
 
 ////////// PROBLEM 6 //////////
@@ -107,4 +115,13 @@ console.log(firstName)
 
 //Code Here
 
+function numberGroups({a, b, c}) {
+  if (a.length > b.length && a.length > c.length) {
+    return a
+  } else if (b.length > c.length) {
+    return b
+  } else {
+    return c
+  }
 
+}
